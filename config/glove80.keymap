@@ -39,6 +39,54 @@
             tapping-term-ms = <200>;
             bindings = <&mo>, <&rgb_ug_status_macro>;
         };
+
+        hm_ctrl: homerow_mods { // Control mods
+          compatible = "zmk,behavior-hold-tap";
+          label = "HOMEROW_CTRL";
+          #binding-cells = <2>;
+          tapping_term_ms = <200>;
+          quick_tap_ms = <150>;
+          flavor = "tap-preferred";
+          bindings = <&kp>, <&kp>;
+          hold_trigger_key_positions = <1>;
+          hold_binding = <&kp LCTRL>;
+        };
+
+        hm_option: homerow_mods { // Option mods
+          compatible = "zmk,behavior-hold-tap";
+          label = "HOMEROW_OPTION";
+          #binding-cells = <2>;
+          tapping_term_ms = <200>;
+          quick_tap_ms = <150>;
+          flavor = "tap-preferred";
+          bindings = <&kp>, <&kp>;
+          hold_trigger_key_positions = <1>;
+          hold_binding = <&kp LALT>;
+        };
+
+        hm_shift: homerow_mods { // Shift mods
+          compatible = "zmk,behavior-hold-tap";
+          label = "HOMEROW_SHIFT";
+          #binding-cells = <2>;
+          tapping_term_ms = <200>;
+          quick_tap_ms = <150>;
+          flavor = "tap-preferred";
+          bindings = <&kp>, <&kp>;
+          hold_trigger_key_positions = <1>;
+          hold_binding = <&kp LSHFT>;
+        };
+
+        hm_cmd: homerow_mods { // Command mods
+          compatible = "zmk,behavior-hold-tap";
+          label = "HOMEROW_COMMAND";
+          #binding-cells = <2>;
+          tapping_term_ms = <200>;
+          quick_tap_ms = <150>;
+          flavor = "tap-preferred";
+          bindings = <&kp>, <&kp>;
+          hold_trigger_key_positions = <1>;
+          hold_binding = <&kp LCMD>;
+        };
     };
 
     macros {
