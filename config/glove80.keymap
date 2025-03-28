@@ -97,7 +97,7 @@
             // |  TAB  |  J  |  D  |  U   |  A   |  X   |                                                 |  P   |   H   |   L   |  M   |   w   |   ß  |
             // |  ESC  |  C  |  T  |  I   |  E   |  O   |                                                 |  B   |   N   |   R   |  S   |   G   |   '  |
             // |   `   |  F  |  V  |  Ü   |  Ä   |  Ö   | LSHFT | LCTRL | LOWER | | LGUI  | RCTRL | RSHFT |  Y   |   Z   |   ,   |  .   |   K   | PGUP |
-            // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
+            // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | TAB   | ESC  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
             &kp F1         &kp F2   &kp F3      &kp F4      &kp F5                                                                                         &kp F6  &kp F7      &kp F8      &kp F9      &kp F10
@@ -105,7 +105,7 @@
             &kp TAB        &kp J    &kp D       &kp U       &kp A       &kp X                                                                      &kp P   &kp H   &kp L       &kp M       &kp W       &kp MINUS
             &kp ESC        &kp C    &kp T       &kp I       &kp E       &kp O                                                                      &kp B   &kp N   &kp R       &kp S       &kp G    &kp SQT
             &kp GRAVE      &kp F    &kp V       &kp LEFT_BRACKET       &kp SQT       &kp SEMICOLON   &kp LSHFT   &kp LCTRL   &layer_td  &kp LGUI  &kp RCTRL &kp RSHFT   &kp Z   &kp Y   &kp COMMA   &kp DOT     &kp K    &kp PG_UP
-            &magic MAGIC 0 &kp HOME &kp END     &kp LEFT    &kp RIGHT           &kp BSPC    &kp DEL     &kp LALT   &kp RALT  &kp RET   &kp SPACE           &kp UP  &kp DOWN    &kp LBKT    &kp RBKT    &kp PG_DN
+            &magic MAGIC 0 &kp HOME &kp END     &kp LEFT    &kp RIGHT           &kp BSPC    &kp TAB     &kp ESC   &kp RALT  &kp RET   &kp SPACE           &kp UP  &kp DOWN    &kp LBKT    &kp RBKT    &kp PG_DN
             >;
         };
 
