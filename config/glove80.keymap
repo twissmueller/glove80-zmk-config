@@ -120,8 +120,8 @@
             // |  =    |  1  |  2  |  3   |  4   |  5   |                                                 |  6   |   7   |   8   |  9   |   0   |   -  |
             // |  TAB  |  X  |  D  |  U   |  A   |  J   |                                                 |  P   |   H   |   L   |  M   |   Q   |   .  |
             // |  ESC  |  C  |  T  |  I   |  E   |  O   |                                                 |  B   |   N   |   R   |  S   |   G   |   ,  |
-            // |   `   |  F  |  V  |  Ü   |  Ä   |  Ö   | LSHFT | LCTRL | LOWER | | LGUI  | RCTRL | RSHFT |  Y   |   Z   |   W   |  ß  |   K   | PGUP |
-            // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | TAB   | ESC  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
+            // |   `   |  F  |  V  |  Ü   |  Ä   |  Ö   | LSHFT | LCTRL | LOWER | | LGUI  | RCTRL | RSHFT |  Y   |   Z   |   W   |  ß   |   K   | PGUP |
+            // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | TAB   | ESC   | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
             &kp F1         &kp F2       &kp F3      &kp F4           &kp F5                                                                                         &kp F6      &kp F7        &kp F8      &kp F9       &kp F10
