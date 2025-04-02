@@ -135,6 +135,7 @@
 
         symbol_and_numbers_layer {
             // ---------------------------------------------------------------------------------------------------------------------------------
+            // https://zmk.dev/docs/keymaps/list-of-keycodes
             // | nop | nop | nop | nop | nop |                                                 | nop | nop | nop | nop | nop |
             // | nop | nop | nop | nop | nop | nop |                                     | nop | nop | nop | nop | nop | nop |
             // | nop |  §  |  $  |  €  |  @  |  %  |                                     |  -  |  8  |  9  |  *  |  /  | nop |
