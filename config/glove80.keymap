@@ -149,7 +149,7 @@
             &none        &none        &none        &none        &none        &none                                                                                      &none        &none        &none        &none        &none        &none
             &none        &none        &none        &none        &none        &none                                                                                      &none        &none        &none        &none        &none        &none
             &none        &none        &none        &none        &none        &none                                                                                      &none        &none        &none        &none        &none        &none
-            &none        &none        &none        &none        &none        &none        &none        &none        &none        &none        &none        &none        &none        &none        &none        &none        &none        &none
+            &none        &kp AMPS     &kp DQT      &kp LPAR     &kp RPAR     &kp HASH     &none        &none        &none        &none        &none        &none        &none        &none        &none        &none        &none        &none
             &none        &none        &none        &none        &none                     &none        &none        &none        &none        &none        &none                     &none        &none        &none        &none        &none
             >;
         };
