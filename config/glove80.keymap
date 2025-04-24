@@ -23,19 +23,6 @@ x/*
 / {
     zmk,unicode-input-mode = "macos";
 
-    ucode: unicode_map {
-        compatible = "zmk,behavior-unicode-map";
-        #binding-cells = <0>;
-        entries {
-            euro {
-                code = <0x20AC>; // Unicode für €
-            };
-            question {
-                code = <0x003F>; // Unicode für '?'
-            };
-        };
-    };
-
     behaviors {
         // For the "layer" key, it'd nice to be able to use it as either a shift or a toggle.
         // Configure it as a tap dance, so the first tap (or hold) is a &mo and the second tap is a &to
@@ -126,7 +113,14 @@ x/*
                   <&bt BT_SEL 3>;
         };
 
-        
+        euro_macro: euro_macro {
+            compatible = "zmk,behavior-macro";
+            label = "EURO_MACRO";
+            #binding-cells = <0>;
+            bindings = <
+                &unicode 0x20AC
+            >;
+        };
     };
 
     keymap {
@@ -164,7 +158,7 @@ x/*
             bindings = <
             &none        &none                    &none        &none               &none                                                                                                                &none        &none        &none        &none        &none
             &none        &none                    &none        &none               &none        &none                                                                                      &none        &none        &none        &none        &none        &none
-            &none        &none                    &kp DLLR     &ucode euro         &kp AT       &kp PRCNT                                                                                  &none        &kp N8       &kp N9       &kp ASTRK    &kp FSLH     &none
+            &none        &none                    &kp DLLR     &euro_macro         &kp AT       &kp PRCNT                                                                                  &none        &kp N8       &kp N9       &kp ASTRK    &kp FSLH     &none
             &none        &none                    &kp EXCL     &kp DOT             &kp COMMA    &kp COLON                                                                                  &none        &kp N4       &kp N5       &kp N6       &kp N7       &none
             &none        &kp AMPS                 &kp DQT      &kp LPAR            &kp RPAR     &kp HASH     &none        &none        &none        &none        &none        &none        &kp EQUAL    &kp N0       &kp N1       &kp N2       &kp N3       &none
             &none        &none                    &none        &none               &none                     &none        &none        &none        &none        &none        &none                     &none        &none        &none        &none        &none
