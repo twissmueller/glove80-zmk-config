@@ -26,6 +26,7 @@
     unicode_map {
         compatible = "zmk,behavior-unicode-map";
         label = "unicode_map";
+        #binding-cells = <0>;
         entries {
             euro {
                 code = <0x20AC>; // Unicode für €
@@ -125,6 +126,8 @@
                 = <&out OUT_BLE>,
                   <&bt BT_SEL 3>;
         };
+
+        
     };
 
     keymap {
