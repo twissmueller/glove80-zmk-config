@@ -30,9 +30,6 @@
             euro {
                 code = <0x20AC>; // Unicode für €
             };
-            question {
-                code = <0x003F>; // Unicode für '?'
-            };
         };
     };
 
