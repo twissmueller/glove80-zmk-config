@@ -23,6 +23,19 @@
 / {
     zmk,unicode-input-mode = "macos";
 
+    ucode: unicode_map {
+        compatible = "zmk,behavior-unicode-map";
+        #binding-cells = <0>;
+        entries {
+            euro {
+                code = <0x20AC>; // Unicode für €
+            };
+            question {
+                code = <0x003F>; // Unicode für '?'
+            };
+        };
+    };
+
     behaviors {
         // For the "layer" key, it'd nice to be able to use it as either a shift or a toggle.
         // Configure it as a tap dance, so the first tap (or hold) is a &mo and the second tap is a &to
