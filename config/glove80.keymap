@@ -121,20 +121,20 @@
 
         default_layer {
             // ---------------------------------------------------------------------------------------------------------------------------------
-            // |  F1   |  F2 |  F3 |  F4  |  F5  |                                                               |  F6   |  F7   |  F8  |   F9  |  F10 |
-            // |  =    |  1  |  2  |  3   |  4   |  5   |                                                 |  6   |   7   |   8   |  9   |   0   |   -  |
-            // |  TAB  |  X  |  D  |  U   |  A   |  J   |                                                 |  P   |   H   |   L   |  M   |   Q   |   .  |
-            // |  ESC  |  C  |  T  |  I   |  E   |  O   |                                                 |  B   |   N   |   R   |  S   |   G   |   ,  |
-            // |   `   |  F  |  V  |  Ü   |  Ä   |  Ö   | LSHFT | LCTRL | LOWER | | LGUI  | RCTRL | RSHFT |  Y   |   Z   |   W   |  ß   |   K   | PGUP |
-            // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | TAB   | ESC   | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
+            // |  nop  | nop | nop |  nop |  nop |                                                               |  nop  |  nop  |  nop |  nop  | nop |
+            // |  nop  |  1  |  2  |  3   |  4   |  5   |                                                 |  6   |   7   |   8   |  9   |   0   | nop |
+            // |  nop  |  X  |  D  |  U   |  A   |  J   |                                                 |  P   |   H   |   L   |  M   |   Q   | nop |
+            // |  nop  |  C  |  T  |  I   |  E   |  O   |                                                 |  B   |   N   |   R   |  S   |   G   | nop |
+            // |  nop  |  F  |  V  |  Ü   |  Ä   |  Ö   | nop   | nop   | nop   | | nop   | nop   | nop   |  Y   |   Z   |   W   |  ß   |   K   | nop |
+            // | MAGIC | nop | nop | nop  | nop  |      | BSPC  | TAB   | ESC   | | RALT  | RET   | SPACE |      |  nop  |  nop  |  nop |  nop  | nop |
 
             bindings = <
-            &kp F1            &kp F2              &kp F3          &kp F4           &kp F5                                                                                                &kp F6       &kp F7        &kp F8      &kp F9           &kp F10
-            &kp EQUAL         &kp N1              &kp N2          &kp N3           &kp N4         &kp N5                                                                      &kp N6     &kp N7       &kp N8        &kp N9      &kp N0           &kp MINUS
-            &kp TAB           &kp X               &kp D           &kp U            &kp A          &kp J                                                                       &kp P      &kp H        &kp L         &kp M       &kp Q            &kp DOT
-            &kp ESC           &hml LCTRL C        &hml LALT T     &hml LSHIFT I    &hml LGUI E    &kp O                                                                       &kp B      &hmr RGUI N  &hmr RSHIFT R &hmr RALT S &hmr RCTRL G     &kp COMMA
-            &kp GRAVE         &kp F               &lt NAVI V      &kp LEFT_BRACKET &lt NAVI SQT   &kp SEMICOLON  &kp LSHFT    &kp LCTRL   &layer_td   &kp LGUI    &kp RCTRL   &kp RSHFT  &lt NAVI Y   &lt NAVI Z    &kp W       &kp MINUS        &lt SYMBOL K    &kp PG_UP
-            &magic MAGIC 0    &kp HOME            &kp END         &kp LEFT         &kp RIGHT                     &kp BSPC     &kp TAB     &kp ESC     &kp RALT    &kp RET     &kp SPACE               &kp UP        &kp DOWN    &kp LBKT         &kp RBKT        &kp PG_DN
+            &none           &none          &none         &none              &none                                                                                                             &none         &none           &none         &none           &none
+            &none           &none          &none         &none              &none          &none                                                                                   &none      &none         &none           &none         &none           &none
+            &none           &kp X          &kp D         &kp U              &kp A          &kp J                                                                                   &kp P      &kp H         &kp L           &kp M         &kp Q           &kp DOT
+            &none           &hml LCTRL C   &hml LALT T   &hml LSHIFT I      &hml LGUI E    &kp O                                                                                   &kp B      &hmr RGUI N   &hmr RSHIFT R   &hmr RALT S   &hmr RCTRL G    &kp COMMA
+            &none           &kp F          &lt NAVI V    &kp LEFT_BRACKET   &lt NAVI SQT   &kp SEMICOLON  &none          &none     &none       &none       &none       &none       &kp Y      &lt NAVI Z    &kp W           &kp MINUS     &lt SYMBOL K    &kp PG_UP
+            &magic MAGIC 0  &none          &none         &none              &none                         &kp BSPC       &kp TAB   &kp ESC     &kp RALT    &kp RET     &kp SPACE              &noneP        &none           &none         &none           &none
             >;
         };
 
@@ -170,9 +170,9 @@
             bindings = <
             &none        &none        &none     &none      &none                                                                                                              &none            &none            &none             &none              &none
             &none        &none        &none     &none      &none       &none                                                                                  &none           &none            &none            &none             &none              &none
-            &none        &none        &none     &kp UP     &none       &none                                                                                  &msc SCRL_UP    &mkp LCLK        &mmv MOVE_UP     &mkp RCLK         &none              &none
+            &none        &none        &none     &kp UP     &none       &none                                                                                  &none           &mkp LCLK        &mmv MOVE_UP     &mkp RCLK         &none              &none
             &none        &none        &kp LEFT  &none      &kp RIGHT   &none                                                                                  &msc SCRL_DOWN  &mmv MOVE_LEFT   &kp RSHFT        &mmv MOVE_RIGHT   &none              &none
-            &none        &none        &none     &kp DOWN   &none       &none    &none        &none        &none        &none        &none        &none        &none           &msc SCRL_LEFT   &mmv MOVE_DOWN   &msc SCRL_RIGHT   &none              &none
+            &none        &none        &none     &kp DOWN   &none       &none    &none        &none        &none        &none        &none        &none        &msc SCRL_      &msc SCRL_LEFT   &mmv MOVE_DOWN   &msc SCRL_RIGHT   &none              &none
             &none        &none        &none     &none      &none                &none        &none        &none        &none        &none        &none                        &none            &none            &none             &none              &none
             >;
         };
