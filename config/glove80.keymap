@@ -160,20 +160,20 @@
 
         navigation_layer {
             // ---------------------------------------------------------------------------------------------------------------------------------
-            // | nop | nop | nop   | nop   | nop    |                                                 | nop    | nop   | nop    | nop | nop |
-            // | nop | nop | nop   | nop   | nop    | nop |                                     | nop | nop    | nop   | nop    | nop | nop |
-            // | nop | nop | nop   | mup   | nop    | nop |                                     | nop | lclick | mup   | rclick | nop | nop |
-            // | nop | nop | mleft | nop   | mright | nop |                                     | nop | mleft  | nop   | mright | nop | nop |
-            // | nop | nop | nop   | mdown | nop    | nop | nop | nop | nop | | nop | nop | nop | nop | nop    | mdown | nop    | nop | nop |
-            // | nop | nop | nop   | nop   | nop    |     | nop | nop | nop | | nop | nop | nop |     | nop    | nop   | nop    | nop | nop |
+            // | nop | nop | nop   | nop   | nop    |                                                   | nop    | nop   | nop    | nop | nop |
+            // | nop | nop | nop   | nop   | nop    | nop |                                     | nop   | nop    | nop   | nop    | nop | nop |
+            // | nop | nop | nop   | mup   | nop    | nop |                                     | sup   | lclick | mup   | rclick | nop | nop |
+            // | nop | nop | mleft | nop   | mright | nop |                                     | sdown | mleft  | nop   | mright | nop | nop |
+            // | nop | nop | nop   | mdown | nop    | nop | nop | nop | nop | | nop | nop | nop | nop   | sleft  | mdown | sright | nop | nop |
+            // | nop | nop | nop   | nop   | nop    |     | nop | nop | nop | | nop | nop | nop |       | nop    | nop   | nop    | nop | nop |
             
             bindings = <
-            &none        &none        &none     &none      &none                                                                                                           &none            &none            &none             &none              &none
-            &none        &none        &none     &none      &none       &none                                                                                  &none        &none            &none            &none             &none              &none
-            &none        &none        &none     &kp UP     &none       &none                                                                                  &none        &mkp LCLK        &mmv MOVE_UP     &mkp RCLK         &none              &none
-            &none        &none        &kp LEFT  &none      &kp RIGHT   &none                                                                                  &none        &mmv MOVE_LEFT   &kp RSHFT        &mmv MOVE_RIGHT   &none              &none
-            &none        &none        &none     &kp DOWN   &none       &none    &none        &none        &none        &none        &none        &none        &none        &none            &mmv MOVE_DOWN   &none             &none              &none
-            &none        &none        &none     &none      &none                &none        &none        &none        &none        &none        &none                     &none            &none            &none             &none              &none
+            &none        &none        &none     &none      &none                                                                                                              &none            &none            &none             &none              &none
+            &none        &none        &none     &none      &none       &none                                                                                  &none           &none            &none            &none             &none              &none
+            &none        &none        &none     &kp UP     &none       &none                                                                                  &msc SCRL_UP    &mkp LCLK        &mmv MOVE_UP     &mkp RCLK         &none              &none
+            &none        &none        &kp LEFT  &none      &kp RIGHT   &none                                                                                  &msc SCRL_DOWN  &mmv MOVE_LEFT   &kp RSHFT        &mmv MOVE_RIGHT   &none              &none
+            &none        &none        &none     &kp DOWN   &none       &none    &none        &none        &none        &none        &none        &none        &none           &msc SCRL_LEFT   &mmv MOVE_DOWN   &msc SCRL_RIGHT   &none              &none
+            &none        &none        &none     &none      &none                &none        &none        &none        &none        &none        &none                        &none            &none            &none             &none              &none
             >;
         };
 
