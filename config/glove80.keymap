@@ -129,12 +129,12 @@
             // | MAGIC | nop | nop | nop  | nop  |      | BSPC  | TAB   | ESC   | | RALT  | RET   | SPACE |      |  nop  |  nop  |  nop |  nop  | nop |
 
             bindings = <
-            &none           &none          &none         &none              &none                                                                                                             &none         &none           &none         &none           &none
-            &none           &none          &none         &none              &none          &none                                                                                   &none      &none         &none           &none         &none           &none
-            &none           &kp X          &kp D         &kp U              &kp A          &kp J                                                                                   &kp P      &kp H         &kp L           &kp M         &kp Q           &kp DOT
-            &none           &hml LCTRL C   &hml LALT T   &hml LSHIFT I      &hml LGUI E    &kp O                                                                                   &kp B      &hmr RGUI N   &hmr RSHIFT R   &hmr RALT S   &hmr RCTRL G    &kp COMMA
-            &none           &kp F          &lt NAVI V    &kp LEFT_BRACKET   &lt NAVI SQT   &kp SEMICOLON  &none          &none     &none       &none       &none       &none       &kp Y      &lt NAVI Z    &kp W           &kp MINUS     &lt SYMBOL K    &kp PG_UP
-            &magic MAGIC 0  &none          &none         &none              &none                         &kp BSPC       &kp TAB   &kp ESC     &kp RALT    &kp RET     &kp SPACE              &none         &none           &none         &none           &none
+            &none           &none          &none         &none                     &none                                                                                                             &none         &none           &none         &none           &none
+            &none           &none          &none         &none                     &none          &none                                                                                   &none      &none         &none           &none         &none           &none
+            &none           &kp X          &kp D         &kp U                     &kp A          &kp J                                                                                   &kp P      &kp H         &kp L           &kp M         &kp Q           &kp DOT
+            &none           &hml LCTRL C   &hml LALT T   &hml LSHIFT I             &hml LGUI E    &kp O                                                                                   &kp B      &hmr RGUI N   &hmr RSHIFT R   &hmr RALT S   &hmr RCTRL G    &kp COMMA
+            &none           &kp F          &kp V         &lt SYMBOL LEFT_BRACKET   &lt NAVI SQT   &kp SEMICOLON  &none          &none     &none       &none       &none       &none       &kp Y      &lt NAVI Z    &lt SYMBOL W    &kp MINUS     &kp K           &kp PG_UP
+            &magic MAGIC 0  &none          &none         &none                     &none                         &kp BSPC       &kp TAB   &kp ESC     &kp RALT    &kp RET     &kp SPACE              &none         &none           &none         &none           &none
             >;
         };
 
