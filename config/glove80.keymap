@@ -10,6 +10,7 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define HYPER LC(LS(LG(LALT)))
 
@@ -167,12 +168,12 @@
             // | nop | nop | nop   | nop   | nop    |     | nop | nop | nop | | nop | nop | nop |     | nop  | nop  | nop   | nop | nop |
             
             bindings = <
-            &none        &none        &none     &none      &none                                                                                                           &none   &none   &none       &none              &none
-            &none        &none        &none     &none      &none       &none                                                                                  &none        &none   &none   &none       &none              &none
-            &none        &none        &none     &kp UP     &none       &none                                                                                  &none        &none   &none   &none       &none              &none
-            &none        &none        &kp LEFT  &none      &kp RIGHT   &none                                                                                  &none        &none   &none   &none       &none              &none
-            &none        &none        &none     &kp DOWN   &none       &none    &none        &none        &none        &none        &none        &none        &none        &none   &none   &none       &none              &none
-            &none        &none        &none     &none      &none                &none        &none        &none        &none        &none        &none                     &none   &none   &none       &none              &none
+            &none        &none        &none     &none      &none                                                                                                           &none            &none   &none       &none              &none
+            &none        &none        &none     &none      &none       &none                                                                                  &none        &none            &none   &none       &none              &none
+            &none        &none        &none     &kp UP     &none       &none                                                                                  &none        &none            &none   &none       &none              &none
+            &none        &none        &kp LEFT  &none      &kp RIGHT   &none                                                                                  &none        &mmv MOVE_LEFT   &none   &none       &none              &none
+            &none        &none        &none     &kp DOWN   &none       &none    &none        &none        &none        &none        &none        &none        &none        &none            &none   &none       &none              &none
+            &none        &none        &none     &none      &none                &none        &none        &none        &none        &none        &none                     &none            &none   &none       &none              &none
             >;
         };
 
