@@ -1,4 +1,4 @@
-/*
+ /*
  * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
@@ -125,16 +125,16 @@
             // |  nop  |  1  |  2  |  3   |  4   |  5   |                                                 |  6   |   7   |   8   |  9   |   0   | nop |
             // |  nop  |  X  |  D  |  U   |  A   |  J   |                                                 |  P   |   H   |   L   |  M   |   Q   | nop |
             // |  nop  |  C  |  T  |  I   |  E   |  O   |                                                 |  B   |   N   |   R   |  S   |   G   | nop |
-            // |  nop  |  F  |  V  |  Ü   |  Ä   |  Ö   | BSPC  | TAB   | DEL   | | ESC   | RET   | SPACE |  Y   |   Z   |   W   |  ß   |   K   | nop |
-            // | MAGIC | nop | nop | nop  | nop  |      | BSPC  | TAB   | DEL   | | ESC   | RET   | SPACE |      |  nop  |  nop  |  nop |  nop  | nop |
+            // |  nop  |  F  |  V  |  Ü   |  Ä   |  Ö   | TAB  | BSPC   | DEL   | | ESC   | RET   | SPACE |  Y   |   Z   |   W   |  ß   |   K   | nop |
+            // | MAGIC | nop | nop | nop  | nop  |      | TAB  | BSPC   | DEL   | | ESC   | RET   | SPACE |      |  nop  |  nop  |  nop |  nop  | nop |
 
             bindings = <
             &none           &none          &none         &none                     &none                                                                                                             &none         &none           &none         &none           &none
             &none           &none          &none         &none                     &none          &none                                                                                   &none      &none         &none           &none         &none           &none
             &none           &kp X          &kp D         &kp U                     &kp A          &kp J                                                                                   &kp P      &kp H         &kp L           &kp M         &kp Q           &kp DOT
             &none           &hml LCTRL C   &hml LALT T   &hml LSHIFT I             &hml LGUI E    &kp O                                                                                   &kp B      &hmr RGUI N   &hmr RSHIFT R   &hmr RALT S   &hmr RCTRL G    &kp COMMA
-            &none           &kp F          &kp V         &lt SYMBOL LEFT_BRACKET   &lt NAVI SQT   &kp SEMICOLON  &kp BSPC       &kp TAB   &kp DEL     &kp ESC     &kp RET     &kp SPACE   &kp Z      &lt NAVI Y    &lt SYMBOL W    &kp MINUS     &kp K           &kp PG_UP
-            &magic MAGIC 0  &none          &none         &none                     &none                         &kp BSPC       &kp TAB   &kp DEL     &kp ESC     &kp RET     &kp SPACE              &none         &none           &none         &none           &none
+            &none           &kp F          &kp V         &lt SYMBOL LEFT_BRACKET   &lt NAVI SQT   &kp SEMICOLON    &kp TAB   &kp BSPC     &kp DEL     &kp ESC     &kp RET     &kp SPACE   &kp Z      &lt NAVI Y    &lt SYMBOL W    &kp MINUS     &kp K           &kp PG_UP
+            &magic MAGIC 0  &none          &none         &none                     &none                           &kp TAB   &kp BSPC     &kp DEL     &kp ESC     &kp RET     &kp SPACE              &none         &none           &none         &none           &none
             >;
         };
 
