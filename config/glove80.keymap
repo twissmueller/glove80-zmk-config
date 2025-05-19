@@ -162,19 +162,19 @@
             // ---------------------------------------------------------------------------------------------------------------------------------
             // | nop | nop  | nop   | nop   | nop    |                                                     | nop    | nop   | nop    | nop | nop |
             // | nop | nop  | nop   | nop   | nop    | nop   |                                     | nop   | nop    | nop   | nop    | nop | nop |
-            // | nop | nop  | nop   | mup   | sup    | nop   |                                     | nop   | lclick | mup   | rclick | nop | nop |
+            // | nop | nop  | nop   | mup   | sup    | sup   |                                     | nop   | lclick | mup   | rclick | nop | nop |
             // | nop | HOME | mleft | nop   | mright | END   |                                     | nop   | mleft  | nop   | mright | nop | nop |
-            // | nop | nop  | nop   | mdown | sdown  | nop   | nop | nop | nop | | nop | nop | nop | nop   | nop    | mdown | nop    | nop | nop |
+            // | nop | nop  | sleft | mdown | sright | sdown   | nop | nop | nop | | nop | nop | nop | nop   | nop    | mdown | nop    | nop | nop |
             // | nop | nop  | nop   | nop   | nop    |       | nop | nop | nop | | nop | nop | nop |       | nop    | nop   | nop    | nop | nop |
             
             bindings = <
             &none        &none        &none           &none      &none                                                                                                                        &none            &none            &none             &none           &none
             &none        &none        &none           &none      &none              &none                                                                                        &none        &none            &none            &none             &none           &none
-            &none        &none        &none           &kp UP     &msc SCRL_DOWN     &msc SCRL_DOWN                                                                               &none        &mkp LCLK        &mmv MOVE_UP     &mkp RCLK         &none           &none
+            &none        &none        &none           &kp UP     &none              &msc SCRL_DOWN                                                                               &none        &mkp LCLK        &mmv MOVE_UP     &mkp RCLK         &none           &none
             &none        &kp HOME     &kp LEFT        &none      &kp RIGHT          &kp END                                                                                      &none        &mmv MOVE_LEFT   &kp RSHFT        &mmv MOVE_RIGHT   &none           &none
             &none        &none        &msc SCRL_LEFT  &kp DOWN   &msc SCRL_RIGHT    &msc SCRL_UP      &none        &none        &none        &none        &none        &none     &none        &none            &mmv MOVE_DOWN   &none             &none           &none
             &none        &none        &none           &none      &none                                &none        &none        &none        &none        &none        &none                  &none            &none            &none             &none           &none
-            >;f
+            >;
         };
 
 
