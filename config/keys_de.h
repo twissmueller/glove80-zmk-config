@@ -1,4 +1,6 @@
 /* https://github.com/joelspadin/zmk-locale-generator/releases/tag/v1.3.2
+ * https://www.reddit.com/r/ErgoMechKeyboards/comments/1gwp5xa/comment/lyb23qn/
+ *
  * Localized Keys for German
  *
  * This file was generated from data with the following license:
